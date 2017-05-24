@@ -1,0 +1,80 @@
+{% extends "Postbase.html" %}
+{% load staticfiles %}
+
+{% block body_block %} 
+
+<p>All
+people have a unique combination of talents, knowledge and skills--strengths--that they use to do their work ,achieve their goal and interact with others every day.when people understand and apply their strengths, the effect on their lives is transformational.People who use their strengths, every day are six times more likely to be engaged in their work and three times more likely to say they have an excelent quality of life.
+Yet, Many people don't even know what their talents are or have the opportunity to build them in to strengths. In pact many people spent Their lives focused on fixing their weaknesses instead.</p>
+
+<p>What
+ makes the biggest developmental different in someone's life is having atleaast one person who not only loves and cares about him but who also recognizes and respects his individuality. Someone who encourages him to excel. Someone who sees the best in him. Someone who helps him find pathways that take him in positive directions.</p>
+<h2 class="section-heading">Achiever</h2>
+<p>Achiever describe a constant need of achievement. You feel as if every day start at zero. By the end of the day you must achieve something  tangible in order to feel good about yourself. And by "every day" you meean every single day bein it workdays, weekends and vocations. No matter how much you may feel you deserve a a day of rest, if the day passes without some form of achievement, no matter how small, you will feel dissatisfied. You have an internal fire burning inside you. It pushes you to do more and achieve more. After each accomplishment is reached, the fire dwindle for a moment, but soon it rekindles itself, forcing you toward the next accomplishment.
+</p>
+<h2 class="section-heading">Activator</h2>
+<p>ACTIVATOR
+"When can we start?"
+This is recurring question in your life. you are impatient for action.For you only action is real, can lead to performance, can make things happen. When decision is made you cannot not act. In your view, action and thinking are not opposite.Infact quided by your activator theme, you believe that action is the best device for leaning. You make a decision you take action, you look at the result and learn. This learnig informs your next and your next(circle)
+You believe you can not grow if you have nothing to react to
+The botton line is this:
+You know you will be judged not by what you say, not by what you think, but by what you get done. This does not frighten you.It pleases you.</p>
+
+<p>For
+those who have seen the Earth from space, and for the hundreds and 
+perhaps thousands more who will, the experience most certainly changes 
+your perspective. The things that we share in our world are far more 
+valuable than those which divide us.</p>
+
+<h2 class="section-heading">The Final Frontier</h2>
+
+<p>There
+can be no thought of finishing for ‘aiming for the stars.’ Both 
+figuratively and literally, it is a task to occupy the generations. And 
+no matter how much progress one makes, there is always the thrill of 
+just beginning.</p>
+
+<p>There
+can be no thought of finishing for ‘aiming for the stars.’ Both 
+figuratively and literally, it is a task to occupy the generations. And 
+no matter how much progress one makes, there is always the thrill of 
+just beginning.</p>
+
+<blockquote>The
+dreams of yesterday are the hopes of today and the reality of tomorrow.
+Science has not yet mastered prophecy. We predict too much for the next
+year and yet far too little for the next ten.</blockquote>
+
+<p>Spaceflights
+cannot be stopped. This is not the work of any one man or even a group 
+of men. It is a historical process which mankind is carrying out in 
+accordance with the natural laws of human development.</p>
+
+<h2 class="section-heading">Reaching for the Stars</h2>
+
+<p>As
+we got further and further away, it [the Earth] diminished in size. 
+Finally it shrank to the size of a marble, the most beautiful you can 
+imagine. That beautiful, warm, living object looked so fragile, so 
+delicate, that if you touched it with a finger it would crumble and fall
+apart. Seeing this has to change a man.</p>
+
+<a href="#">
+<img class="img-responsive" src= "{% static 'style/img/post-sample-image.jpg' %}" alt="">
+</a>
+<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+
+<p>Space,
+the final frontier. These are the voyages of the Starship Enterprise. 
+Its five-year mission: to explore strange new worlds, to seek out new 
+life and new civilizations, to boldly go where no man has gone 
+before.</p>
+
+<p>As
+I stand out here in the wonders of the unknown at Hadley, I sort of 
+realize there’s a fundamental truth to our nature, Man must explore, and
+this is exploration at its greatest.</p>
+
+<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+
+{% endblock %}

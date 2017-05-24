@@ -1,0 +1,21 @@
+{% extends "indexbase.html" %}
+{% load staticfiles %}
+
+{% block body_block %}      
+<div class="post-preview">
+{% for post in posts %}
+<a href="/maiagogo/post/{{post.pk }}">
+<h2 class="post-title">
+   {{ post.title }}
+</h2>
+</a>
+<p class="post-meta"> <span class="glyphicon glyphicon-time"> </span> Posted by <a href="#">{{ post.author }}</a> on {{ post.published_date }}</p>
+<p>
+   {{ post.text|linebreaksbr }}
+</p>
+
+{% endfor %}
+</div>
+<hr>
+
+{% endblock %}

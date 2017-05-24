@@ -1,0 +1,31 @@
+{% extends "reindexbase.html" %}
+{% load staticfiles %}
+
+{% block body_block %} 
+   {% if registered %}
+   <p>Thank you for registering.</p>
+   <p><a href="/maiagogo/user_login/">Login</a> when you are read!.</p>
+   {% else %}
+   <form  method="post" id="user_form" action="/maiagogo/register/"
+   enctype="multipart/form-data">
+   {% csrf_token %}
+   <h2>Sign up Here</h2>
+   <!-- Display each form here -->
+
+{% for field in user_form.visible_fields %} 
+     {{field.errors }} 
+     {{field.help_text}}</br> 
+     {{field }}</br>
+  {% endfor %} 
+  {% for field in profile_form.visible_fields %} 
+     {{field.errors }} 
+     {{field.help_text}}</br> 
+     {{field }} 
+  {% endfor %} 
+<br />
+<!-- Provide a button to click to submit the form. -->
+<button type="submit" class="btn btn-default">REGISTER</button>
+</form>
+
+{% endif %}
+{% endblock %}
