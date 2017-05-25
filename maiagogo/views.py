@@ -6,6 +6,7 @@ from maiagogo.forms import UserForm, UserProfileForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 def aboutMe(request):
   return render(request, 'Aboutme.html',{})
@@ -21,6 +22,7 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'post_detail.html', {'post': post})
 
+@login_required
 def post_new(request):
 	if request.method == "POST":
            form	= PostForm(request.POST)
@@ -33,7 +35,7 @@ def post_new(request):
 	else:
 	      form = PostForm()
 	return	render(request,	'post_edit.html', {'form': form})
-
+@login_required
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
@@ -144,7 +146,7 @@ def user_login(request):
 		# No context variables to pass to the template system, hence the
 		# blank dictionary object...
 		return render(request, 'login.html', {})
-
+@login_required
 def user_logout(request):
     # Since we know the user is logged in, we can now just log them out.
     logout(request)

@@ -10,7 +10,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog</title>
+    <title>Maiagogo - {% block title %}Contact!{% endblock %}</title>
+
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'style/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
@@ -44,7 +45,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Ammar Bello</a>
+                <a class="navbar-brand" href="index.html">Maiagogo</a>
                <a class="navbar-brand" href="/maiagogo/post/new/"><span class="glyphicon glyphicon-plus"></span></a>
             </div>
 
@@ -63,12 +64,13 @@
                     <li>
                         <a href="/maiagogo/contact/">Contact</a>
                     </li>
-                    <li>
-                        <a  href="/maiagogo/register/">Register</a>
-                    </li>
-                    <li>
-                        <a  href="/maiagogo/user_login/">Login</a>
-                    </li>
+                     {% if user.is_authenticated %} 
+                     <li ><a href="#">Welcome, {{ user.username }}!</a></li> 
+                     <li ><a href="/maiagogo/user_logout/">Logout</a></li> 
+                     {% else %} 
+                     <li><a href="/maiagogo/register/">Register</a></li> 
+                     <li><a href="/maiagogo/user_login/">Login</a></li>
+                     {% endif %} 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

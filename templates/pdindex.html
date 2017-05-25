@@ -1,7 +1,6 @@
-{% extends "indexbase.html" %}
+{% extends "reindexbase.html" %}
 {% load staticfiles %}
-    <title>Maiagogo - {% block title %}Post detail!{% endblock %}</title>
-
+{% block title %}Post detail!{% endblock %}
 {% block body_block %}      
 <div class="post-preview">
 {% if post.published_date %}
@@ -20,11 +19,3 @@
 
 {% endblock %}
 
-{% block pager_block %}
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Maiagogo;</a>
-                    </li>
-               
-                   </ul>
-{% endblock %}

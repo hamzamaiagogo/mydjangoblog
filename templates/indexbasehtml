@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Maiagogo - {% block title %}Register!{% endblock %}</title>
+    <title>Maiagogo - {% block title %}Blog!{% endblock %}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'style/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
@@ -44,11 +44,11 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Maiagogo</a>
+                <a class="navbar-brand" href="index.html">MAIAGOGO</a>
                 <a class="navbar-brand" href="/maiagogo/post/new/"><span class="glyphicon glyphicon-plus"></span></a>
               
             </div>
-  
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -64,13 +64,14 @@
                     <li>
                         <a href="/maiagogo/contact/">Contact</a>
                     </li>
+
                      {% if user.is_authenticated %} 
-                     <li ><a href="#">Welcome, {{ user.username }}!</a></li> 
-                     <li ><a href="/maiagogo/user_logout/">Logout</a></li> 
+                     <li class="navbar-text">Welcome, {{ user.username }}!</li> 
+                     <li class="active"><a href="/maiagogo/user_logout/">Logout</a></li> 
                      {% else %} 
                      <li><a href="/maiagogo/register/">Register</a></li> 
                      <li><a href="/maiagogo/user_login/">Login</a></li>
-                     {% endif %}
+                     {% endif %} 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -85,9 +86,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Maiagogo Say...</h1>
+                        <h1>Maiagogo Blog</h1>
                         <hr class="small">
-                        <span class="subheading">Happy to see you here</span>
+                        <span class="subheading">A Blog where you can say what is in your mind</span>
                     </div>
                 </div>
             </div>
@@ -102,7 +103,16 @@
                 {% block body_block %}
 
                {% endblock %}
-               
+                <!-- Pager -->
+          
+                  {% block body_block %}
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+                {% endblock %}
+                  
             </div>
         </div>
     </div>
