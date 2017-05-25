@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     url(r'^contact/$', 'maiagogo.views.contact', name='contact'),
     url(r'^register/$', 'maiagogo.views.register', name='register'),
     url(r'^user_login/$', 'maiagogo.views.user_login', name='user_login'),
+    url(r'^user_logout/', 'maiagogo.views.user_logout', name='user_logout'),
     url(r'^aboutMe/$', 'maiagogo.views.aboutMe', name='aboutMe'),
     url(r'^sample/$', 'maiagogo.views.sample', name='sample'),
 )

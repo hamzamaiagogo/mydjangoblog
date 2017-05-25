@@ -15,7 +15,8 @@ def sample(request):
   return render(request, 'post.html',{})
 
 def About(request):
-    posts = Post.objects.all()
+    posts=Post.objects.order_by('-published_date')
+    #posts=Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'index.html', {'posts': posts})
 
 def post_detail(request, pk):
