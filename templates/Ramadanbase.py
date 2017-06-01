@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Maiagogo - {% block title %}Login!{% endblock %}</title>
+    <title>Clean Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'style/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
@@ -44,18 +44,17 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">maiagogo</a>
+                <a class="navbar-brand" href="index.html">Ammar Bello</a>
                 <a class="navbar-brand" href="/maiagogo/post/new/"><span class="glyphicon glyphicon-plus"></span></a>
-              
             </div>
-  
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                    <li>
                         <a href="/maiagogo/">Home</a>
                     </li>
-		 <li>
+                    <li>
                         <a href="/maiagogo/ramadan/">Ramadan</a>
                     </li>
                     <li>
@@ -67,13 +66,6 @@
                     <li>
                         <a href="/maiagogo/contact/">Contact</a>
                     </li>
-                     {% if user.is_authenticated %} 
-                     <li ><a href="#">Welcome, {{ user.username }}!</a></li> 
-                     <li ><a href="/maiagogo/user_logout/">Logout</a></li> 
-                     {% else %} 
-                     <li><a href="/maiagogo/register/">Register</a></li> 
-                     <li><a href="/maiagogo/user_login/">Login</a></li>
-                     {% endif %} 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -83,34 +75,36 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url({% static 'style/img/home-bg.jpg' %})">
+<header class="intro-header" style="background-image: url({% static 'style/img/Ra2.jpeg' %})">
 <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Login</h1>
+ <div class="page-heading">
+                        <h1>Ramadan 2017</h1>
                         <hr class="small">
-                        <span class="subheading">Have fun and enjoy staying...</span>
-                    </div>
+                        <span class="subheading">Ramadan Wishes, Messages and Ramadan Greetings</span>
+</div>
+
                 </div>
             </div>
         </div>
 </header>
 
-    <!-- Main Content -->
+    <!-- Post Content -->
+    <article>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
                 {% block body_block %}
-
+        
                {% endblock %}
                
             </div>
         </div>
     </div>
-    <hr>
-
+</article>
+<hr>
     <!-- Footer -->
     <footer>
         <div class="container">

@@ -11,6 +11,9 @@ from django.contrib.auth.decorators import login_required
 def aboutMe(request):
   return render(request, 'Aboutme.html',{})
 
+def ramadan(request):
+  return render(request, 'ramadan.html',{})
+
 def sample(request):
   return render(request, 'post.html',{})
 

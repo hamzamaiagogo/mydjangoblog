@@ -9,6 +9,7 @@ and I will try to get back to you within 24 hours!</p>
    <div class="form-group col-xs-12 floating-label-form-group controls">
  <form  method="POST"  > 
 <input type="text" class="form-control" placeholder="Type anything here, and then proceed" id="Type anything here, and then proceed" >
+            <p class="help-block text-danger"></p>
   {% csrf_token %} 
   {{ form.as_p }}
 </div>

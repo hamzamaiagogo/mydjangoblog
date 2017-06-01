@@ -63,12 +63,6 @@
                     <li>
                         <a href="/maiagogo/contact/">Contact</a>
                     </li>
-                    <li>
-                        <a  href="/maiagogo/register/">Register</a>
-                    </li>
-                    <li>
-                        <a  href="/maiagogo/user_login/">Login</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -78,15 +72,15 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url({% static 'style/img/pic1.png' %})">
+<header class="intro-header" style="background-image: url({% static 'style/img/post-bg.jpg' %})">
 <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
                  <div class="post-heading">
-                        <h1>Top 5 Talents</h1>
-                        <h2 class="subheading">Know your self and people around you!</h2>
-                        <span class="meta">Posted by <a href="#">Maiagogo</a> on May 24, 2017</span>
+                        <h1>Man must explore, and this is exploration at its greatest</h1>
+                        <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+                        <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
                   </div>  
 
                 </div>
