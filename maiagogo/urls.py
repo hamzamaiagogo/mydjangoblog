@@ -15,4 +15,5 @@ urlpatterns = patterns('',
     url(r'^aboutMe/$', 'maiagogo.views.aboutMe', name='aboutMe'),
     url(r'^sample/$', 'maiagogo.views.sample', name='sample'),
     url(r'^ramadan/$', 'maiagogo.views.ramadan', name='ramadan'),
+    url(r'^islam/$', 'maiagogo.views.islam', name='islam'),
 )

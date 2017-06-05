@@ -10,8 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Maiagogo - {% block title %}Post!{% endblock %}</title>
-
+    <title>Maiagogo-Ramadan</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'style/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
@@ -45,7 +44,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Maiagogo</a>
+                <a class="navbar-brand" href="index.html">maiagogo</a>
                 <a class="navbar-brand" href="/maiagogo/post/new/"><span class="glyphicon glyphicon-plus"></span></a>
             </div>
 
@@ -54,9 +53,6 @@
                 <ul class="nav navbar-nav navbar-right">
                    <li>
                         <a href="/maiagogo/">Home</a>
-                    </li>
-			<li>
-                        <a href="/maiagogo/islam/">Islamic</a>
                     </li>
                     <li>
                         <a href="/maiagogo/ramadan/">Ramadan</a>
@@ -70,7 +66,7 @@
                     <li>
                         <a href="/maiagogo/contact/">Contact</a>
                     </li>
-                     {% if user.is_authenticated %} 
+		{% if user.is_authenticated %} 
                      <li ><a href="#">Welcome, {{ user.username }}!</a></li> 
                      <li ><a href="/maiagogo/user_logout/">Logout</a></li> 
                      {% else %} 
@@ -86,16 +82,15 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url({% static 'style/img/post-bg.jpg' %})">
+<header class="intro-header" style="background-image: url({% static 'style/img/isl/home-bg.jpg' %})">
 <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-                 <div class="post-heading">
-                        <h1>Top 5 Talents</h1>
-                        <h2 class="subheading">Know your self and people around you!</h2>
-                        <span class="meta">Posted by <a href="#">Maiagogo</a> on May 24, 2017</span>
-                  </div>  
+ <div class="page-heading">
+                        <h1>Islam</h1>
+                        <hr class="small">
+                        <span class="subheading">DIN's Train the Trainers course </span>
+</div>
 
                 </div>
             </div>

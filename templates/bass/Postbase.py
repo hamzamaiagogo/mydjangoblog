@@ -55,6 +55,9 @@
                    <li>
                         <a href="/maiagogo/">Home</a>
                     </li>
+			<li>
+                        <a href="/maiagogo/islam/">Islamic</a>
+                    </li>
                     <li>
                         <a href="/maiagogo/ramadan/">Ramadan</a>
                     </li>

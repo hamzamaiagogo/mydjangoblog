@@ -14,6 +14,10 @@ def aboutMe(request):
 def ramadan(request):
   return render(request, 'ramadan.html',{})
 
+def islam(request):
+  return render(request, 'islam.html',{})
+
+
 def sample(request):
   return render(request, 'post.html',{})
 
